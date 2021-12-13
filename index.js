@@ -30,6 +30,9 @@ eButStart.addEventListener("click", (event)=>{
             }
             document.querySelector(".app__timer").textContent = `${prefixe(minutes)}:${prefixe(secondes)}:${prefixe(milSecondes)}`;
         }, 1);
+        if (eButStart.textContent!=="Démarrer" && eButLap.textContent==="Tour"){
+            [eButLap.dataset.alternate, eButLap.textContent] = [eButLap.textContent, eButLap.dataset.alternate]
+        }
     }else {
         clearInterval(intervalID);
         intervalID = 0;
