@@ -47,4 +47,8 @@ eButLap.addEventListener("click", (event)=>{
         <span class="app__lap-count">Tour ${iTour}</span>
         <time class="app__lap-value" datatype=\"XX:YY:ZZ\">${prefixe(minutes)}:${prefixe(secondes)}:${prefixe(milSecondes)}</time>
         </li>`)
+    if (eButLap.textContent === "Effacer"){
+        clearInterval(intervalID);
+        // document.querySelector(".app__laps").
+    }
 });
