@@ -11,8 +11,6 @@
             function prefixe(num){
                 return `${num}`.padStart(2, '0');
             }
-
-
             eButStart.addEventListener("click", (event)=>{
                 if (intervalID === 0){
                     [eButStart.dataset.alternate, eButStart.textContent] = [eButStart.textContent, eButStart.dataset.alternate];
