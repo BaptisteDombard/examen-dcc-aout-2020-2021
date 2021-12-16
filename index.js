@@ -43,9 +43,9 @@
                 if (eButLap.textContent === "Tour"){
                     iTour++;
                     document.querySelector(".app__laps").insertAdjacentHTML("beforeend", `<li class="app__lap">
-        <span class="app__lap-count">Tour ${iTour}</span>
-        <time class="app__lap-value" datatype=\"XX:YY:ZZ\">${prefixe(minutes)}:${prefixe(secondes)}:${prefixe(milSecondes)}</time>
-        </li>`)
+                    <span class="app__lap-count">Tour ${iTour}</span>
+                    <time class="app__lap-value" datatype=\"XX:YY:ZZ\">${prefixe(minutes)}:${prefixe(secondes)}:${prefixe(milSecondes)}</time>
+                    </li>`)
                 }
                 if (eButLap.textContent === "Effacer"){
                     document.querySelector(".app__laps").innerHTML = "";
