@@ -49,6 +49,7 @@
                     milSecondes=0;
                     secondes=0;
                     minutes=0;
+                    iTour=0;
                     document.querySelector(".app__timer").textContent = `${prefixe(minutes)}:${prefixe(secondes)}:${prefixe(milSecondes)}`;
                     [eButLap.textContent, eButLap.dataset.alternate] = [eButLap.dataset.alternate, eButLap.textContent];
                 }
